@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пошук рейсів</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <h1>Пошук рейсів</h1>
+
+  <form id="form" novalidate>
+    <label for="text">Текст</label>
+    <textarea id="text" rows="7" aria-describedby="status"></textarea>
+    <div class="row">
+      <button type="submit">Знайти</button>
+      <button type="button" id="clear" class="ghost">Очистити</button>
+    </div>
+  </form>
+
+  <p id="status" role="status" aria-live="polite" hidden></p>
+
+  <section id="result" hidden>
+    <h2>Результат</h2>
+    <div id="groups" class="groups"></div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
